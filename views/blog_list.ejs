@@ -1,0 +1,45 @@
+<%- include('partials/blog_head') %>
+  <script src="/javascripts/jquery.twbsPagination.min.js"></script>
+  <!-- main contents -->
+  <!-- MainBody ======================= -->
+  <div id="mainBody">
+    <div class="container">
+
+      <div class="row">
+
+        <!-- 缩略图 -->
+        <% blogs.forEach(function(blog, index) { %>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="./images/<%= blog.image %>" alt="thumbnail">
+              <div class="caption">
+                <h3> <%= blog.title %> </h3>
+                <p class="text-nowrap"> <%= blog.description %> </p>
+                <p> <%= blog.by %> </p>
+                <p><a href="detail" class="btn btn-primary" role="button">Reading</a> <a href="detail" class="btn btn-default"
+                    role="button">Order</a></p>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+
+        <ul class="pagination" id="pagination">
+        </ul> 
+        <script>
+          $(function () {
+            var obj = $('#pagination').twbsPagination({
+              totalPages: 35,
+              visiblePages: 9,
+              onPageClick: function (event, page) {
+                console.info(page);
+              }
+            });
+            console.info(obj.data());
+          });
+        </script>
+
+      </div>
+    </div>
+  </div>
+
+<%- include('partials/blog_footer') %>

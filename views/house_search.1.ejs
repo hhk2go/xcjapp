@@ -1,0 +1,53 @@
+<%- include('partials/house_header') %>
+
+  <!-- MainBody ======================= -->
+  <div id="mainBody">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- 缩略图 -->
+        <% houseList.forEach(function(house, index) { %>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="./images/house04.png" alt="thumbnail">
+              <div class="caption">
+                <h3>
+                  <%= house.name %>
+                </h3>
+                <p class="text-nowrap">
+                  价格：<%= house.price/10000 %>万元， 面积：<%= house.area %>平方米
+                </p>
+                <p>
+                  <%= house.prov %> <%= house.city %>， <%= house.district %>
+                </p>
+                <p><a href="detail" class="btn btn-primary" role="button">Reading</a> <a href="detail" class="btn btn-default"
+                    role="button">Order</a></p>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+        <!-- 缩略图 END -->
+
+        <ul class="pagination">
+          <li><a href="#">Prev</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+
+
+      </div>
+
+    </div>
+  </div>
+
+<%- include('partials/house_footer') %>

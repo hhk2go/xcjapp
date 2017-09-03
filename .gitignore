@@ -1,3 +1,13 @@
+/example
+.vscode
+yarn.lock
+/devenv
+/server
+*.md
+.eslintrc.js
+LICENSE
+
+
 # Logs
 logs
 *.log
@@ -56,4 +66,3 @@ typings/
 
 # dotenv environment variables file
 .env
-

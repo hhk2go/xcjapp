@@ -1,0 +1,89 @@
+<%- include('partials/house_header') %>
+
+  <!-- MainBody ======================= -->
+  <div id="mainBody">
+    <div class="container">
+
+      <div class="row" id="summary">
+        <div class="col-lg-6 col-md-6" id="house-carousel">
+          <!-- Carousel -->
+          <div class="carousel slide" id="carousel-example">
+
+            <!-- ol.carousel-indicators>li[data-target="#carousel-example" data-slide-to="0"]*3 -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example" data-slide-to="1"></li>
+              <li data-target="#carousel-example" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <!-- .carousel-inner>.item.active>img+.carousel-caption -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://lorempixel.com/600/300" alt="Image">
+                <div class="carousel-caption">This is a caption</div>
+              </div>
+              <div class="item">
+                <img src="http://lorempixel.com/600/300/people" alt="Image">
+                <div class="carousel-caption">This is a caption 2</div>
+              </div>
+              <div class="item">
+                <img src="http://lorempixel.com/600/300/business" alt="Image">
+                <div class="carousel-caption">This is a caption 3</div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <!-- a.carousel-control[href="#carousel-example" data-slide]>span.icon -->
+            <a href="#carousel-example" class="left carousel-control" data-slide="prev">
+							<span class="icon-prev"></span>
+						</a>
+            <a href="#carousel-example" class="right carousel-control" data-slide="next">
+							<span class="icon-next"></span>
+						</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6" id="house-spec">
+          <h3>xx住宅转让</h3>
+          <dl>
+            <dt>售价</dt>
+            <dd>130万</dd>
+            <dt>面积</dt>
+            <dd>1300平方米</dd>
+            <dt>类型</dt>
+            <dd>可以出售、股权</dd>
+            <dt>权属关系</dt>
+            <dd>自有产权</dd>
+            <dt>电话</dt>
+            <dd>025-88880000</dd>
+            <dt>地址</dt>
+            <dd>江苏省南京市高淳xx</dd>
+            <dd>从南京市区出发，沿机场高速行驶，45分钟可以到达。</dd>
+          </dl>
+
+
+        </div>
+      </div>
+
+      <div class="row" id="description">
+        <div class="col-lg-12 col-md-12">
+          <h3>详细描述</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quisquam quasi in, ullam quibusdam soluta ex
+            magni molestias blanditiis voluptates aut tenetur ratione repellat labore ipsum ab sint iste earum?</p>
+          <img src="http://lorempixel.com/1170/600/business" alt="Image">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quisquam quasi in, ullam quibusdam soluta ex
+            magni molestias blanditiis voluptates aut tenetur ratione repellat labore ipsum ab sint iste earum?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quisquam quasi in, ullam quibusdam soluta ex
+            magni molestias blanditiis voluptates aut tenetur ratione repellat labore ipsum ab sint iste earum?</p>
+          <img src="http://lorempixel.com/1170/600/people" alt="Image">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quisquam quasi in, ullam quibusdam soluta ex
+            magni molestias blanditiis voluptates aut tenetur ratione repellat labore ipsum ab sint iste earum?</p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<%- include('partials/house_footer') %>

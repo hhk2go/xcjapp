@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>House</title>
+
+	<link href="./../stylesheets/bootstrap.min.css" rel="stylesheet">
+	<!-- city-picker css -->
+	<link href="./../assets/city-picker/city-picker.css" rel="stylesheet">
+
+	<script src="./../javascripts/jquery.min.js"></script>
+	<script src="./../javascripts/bootstrap.min.js"></script>
+
+	<!-- city-picker javascript -->
+	<script src="./../assets/city-picker/city-picker.data.js"></script>
+	<script src="./../assets/city-picker/city-picker.js"></script>
+	<script src="./../assets/city-picker/main.js"></script>
+
+	<!-- city-select javascript -->
+	<script src="./../assets/city-select/js/distpicker.data.js"></script>
+	<script src="./../assets/city-select/js/distpicker.js"></script>
+	<script src="./../assets/city-select/js/main.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Header ======================= -->
+	<div id="header">
+		<div class="container">
+			<div id="welcomeLine" class="row">
+				<p>欢迎光临XX网站</p>
+			</div>
+
+			<!-- Navbar ======================= -->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					<a href="#" class="navbar-brand"><img src="images/home.png" alt="Brand"></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="main-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="house.html">首页</a></li>
+						<li class="active"><a href="house-list.html">产业</a></li>
+						<li><a href="#">交易</a></li>
+						<li><a href="#">资金支持</a></li>
+						<li><a href="#">政策与法规</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input class="form-control" type="text" />
+						</div>
+						<button class="btn btn-default" type="submit">搜索</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">用户名</a></li>
+						<li><a href="#">注册</a></li>
+						<li><a href="#">登陆</a></li>
+						<li><a href="#">发布</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">配置<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<!-- MainBody ======================= -->
+	<div id="mainBody">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+
+				<form class="form-inline">
+					<div id="distpicker">
+						<div class="form-group">
+							<div style="position: relative;">
+								<input id="city-picker" class="form-control" readonly type="text" value="江苏省/南京市/高淳区" data-toggle="city-picker">
+							</div>
+						</div>
+						<div class="form-group">
+							<button class="btn" id="reset" type="button">重置</button>
+							<button class="btn" id="destroy" type="button">确定</button>
+						</div>
+					</div>
+				</form>
+
+				</div>
+			</div>
+
+
+
+			<div class="row">
+
+				<!-- 缩略图 -->
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house04.png" alt="thumbnail">
+						<div class="caption">
+							<h3>小城民宿</h3>
+							<p class="text-nowrap">160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house03.png" alt="thumbnail">
+						<div class="caption">
+							<h3>住宅转让</h3>
+							<p>160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house01.png" alt="thumbnail">
+						<div class="caption">
+							<h3>农家乐</h3>
+							<p>160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house02.png" alt="thumbnail">
+						<div class="caption">
+							<h3>小城民宿</h3>
+							<p>160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+				
+								<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house04.png" alt="thumbnail">
+						<div class="caption">
+							<h3>小城民宿</h3>
+							<p class="text-nowrap">160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house03.png" alt="thumbnail">
+						<div class="caption">
+							<h3>住宅转让</h3>
+							<p>160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house01.png" alt="thumbnail">
+						<div class="caption">
+							<h3>农家乐</h3>
+							<p>160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house02.png" alt="thumbnail">
+						<div class="caption">
+							<h3>小城民宿</h3>
+							<p>160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+								<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house04.png" alt="thumbnail">
+						<div class="caption">
+							<h3>小城民宿</h3>
+							<p class="text-nowrap">160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house03.png" alt="thumbnail">
+						<div class="caption">
+							<h3>住宅转让</h3>
+							<p>160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house01.png" alt="thumbnail">
+						<div class="caption">
+							<h3>农家乐</h3>
+							<p>160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img src="images/house02.png" alt="thumbnail">
+						<div class="caption">
+							<h3>小城民宿</h3>
+							<p>160万, 1200平方米</p>
+							<p>50年, 江苏南京*高淳</p>
+							<p><a href="house-detail.html" class="btn btn-primary" role="button">订购</a> <a href="house-detail.html" class="btn btn-default" role="button">预订</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- 缩略图 END -->
+				
+				<ul class="pagination">
+				<li><a href="#">Prev</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">Next</a></li>
+			</ul>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Footer ======================= -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-lg-4 col-md-4">
+					<ul class="list-unstyled clear-margins">
+						<li class="widget-container widget_nav_menu">
+							<h3 class="title-widget">参考信息</h3>
+							<ul>
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">联系我们</a></li>
+								<li><a href="#">成功案例</a></li>
+								<li><a href="#">加入我们</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<ul class="list-unstyled clear-margins">
+						<li class="widget-container widget_nav_menu">
+							<h3 class="title-widget">友情链接</h3>
+							<ul>
+								<li><a href="#">XX房产网</a></li>
+								<li><a href="#">XX房产网</a></li>
+								<li><a href="#">xx政府信息网</a></li>
+								<li><a href="#">xx政府信息网</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<h3>联系信息</h3>
+					<address>
+						<strong>XX有限公司</strong><br>
+						江苏省南京市<br>
+						XX区XX路NN号<br>
+						<abbr title="Phone">电话：</abbr> 025-88888888
+					</address>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="copyright">© 2017, XX网, 版权所有</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="design">XXX 设计开发</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</body>
+</html>
