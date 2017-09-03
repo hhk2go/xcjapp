@@ -6,6 +6,7 @@ yarn.lock
 *.md
 .eslintrc.js
 LICENSE
+!/README.md
 
 
 # Logs
