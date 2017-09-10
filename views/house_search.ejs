@@ -15,9 +15,9 @@
         <% houseList.forEach(function(house, index) { %>
           <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-              <img src="./images/house04.png" alt="thumbnail">
+             <a href="detail"> <img src="./images/house04.png" alt="thumbnail"> </a>
               <div class="caption">
-                <h3><%= house.name %></h3>
+                <h3> <a href="detail"> <%= house.name %></h3> </a>
                 <p class="text-nowrap">
                   价格：<%= house.price/10000 %>万元， 面积：<%= house.area %>平方米
                 </p>
